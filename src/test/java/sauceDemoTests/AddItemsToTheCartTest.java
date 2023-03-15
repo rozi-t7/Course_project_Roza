@@ -1,4 +1,4 @@
-package sauce.demo.tests;
+package sauceDemoTests;
 import base.TestUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -8,14 +8,13 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.LoginPage;
 import pages.ProductsPage;
-
 import java.time.Duration;
 import java.util.Collections;
 import java.util.NoSuchElementException;
 
 public class AddItemsToTheCartTest extends TestUtil {
     @Test
-        public void addItemToTheCart () throws InterruptedException {
+        public void addItemToTheCart () {
             LoginPage loginPage = new LoginPage(driver);
             ProductsPage productsPage = loginPage.login("standard_user", "secret_sauce");
 

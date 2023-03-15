@@ -5,17 +5,17 @@
 
     <test name="Successful login test">
         <classes>
-            <class name="sauce.demo.tests.SuccessfulLoginTest"/>
+            <class name="sauceDemoTests.LoginTests"/>
         </classes>
     </test>
     <test name="Add items to cart">
         <classes>
-            <class name="sauce.demo.tests.AddItemsToCart"/>
+            <class name="sauceDemoTests.AddItemsToTheCartTest"/>
         </classes>
     </test>
     <test name="Checkout order">
         <classes>
-            <class name="sauce.demo.tests.CheckoutOrder"/>
+            <class name="sauceDemoTests.CheckoutOrderTest"/>
         </classes>
     </test>
     </suite>

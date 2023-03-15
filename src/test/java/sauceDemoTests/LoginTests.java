@@ -1,4 +1,4 @@
-package sauce.demo.tests;
+package sauceDemoTests;
 
 import base.TestUtil;
 import com.opencsv.exceptions.CsvException;
