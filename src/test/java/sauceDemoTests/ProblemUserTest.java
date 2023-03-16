@@ -3,7 +3,6 @@ package sauceDemoTests;
 import base.TestUtil;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.LoginPage;
 import pages.ProblemUserProductsPage;
 
 public class ProblemUserTest extends TestUtil {
@@ -14,7 +13,6 @@ public class ProblemUserTest extends TestUtil {
         problemUserProductsPage.loginWithProblemUser("problem_user", "secret_sauce");
 
         problemUserProductsPage.navigateToProduct();
-
-
+        Assert.assertFalse(problemUserProductsPage.isCorrectPageOpened());
         }
 }

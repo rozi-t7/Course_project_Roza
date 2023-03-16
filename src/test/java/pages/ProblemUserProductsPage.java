@@ -5,10 +5,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 
 public class ProblemUserProductsPage {
     protected WebDriver driver;
+
+    @FindBy(xpath = "//*[text()='Sauce Labs Onesie']")
+    private WebElement onesie;
+
     public ProblemUserProductsPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -26,9 +29,12 @@ public class ProblemUserProductsPage {
         WebElement loginButton = driver.findElement(By.cssSelector("[value=Login]"));
         loginButton.click();
     }
-    public void navigateToProduct(){
+
+    public void navigateToProduct() {
         WebElement link = driver.findElement(By.xpath("//*[text()='Sauce Labs Bolt T-Shirt']"));
         link.click();
-        WebElement urlPage = driver.findElement(By.xpath("//*[text()='Sauce Labs Onesie']"));
     }
-}
+        public boolean isCorrectPageOpened () {
+            return Boolean.parseBoolean(onesie.getText());
+        }
+    }
