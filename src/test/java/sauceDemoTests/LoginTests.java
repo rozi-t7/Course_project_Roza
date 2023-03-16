@@ -2,8 +2,6 @@ package sauceDemoTests;
 
 import base.TestUtil;
 import com.opencsv.exceptions.CsvException;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -11,10 +9,6 @@ import pages.LoginPage;
 import pages.ProductsPage;
 import utils.CsvHelper;
 import java.io.IOException;
-import java.time.Duration;
-import java.util.Collections;
-import java.util.List;
-import java.util.NoSuchElementException;
 
 public class LoginTests extends TestUtil {
     @DataProvider(name = "csvUserNames")

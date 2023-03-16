@@ -47,7 +47,6 @@ public class TestUtil {
                 throw new IllegalStateException("Unsupported browser");
         }
     }
-
     private void loadUrl(String url) {
         driver.get(url);
     }
