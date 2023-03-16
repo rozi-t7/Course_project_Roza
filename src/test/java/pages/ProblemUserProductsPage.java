@@ -34,7 +34,7 @@ public class ProblemUserProductsPage {
         WebElement link = driver.findElement(By.xpath("//*[text()='Sauce Labs Bolt T-Shirt']"));
         link.click();
     }
-        public boolean isCorrectPageOpened () {
+    public boolean isCorrectPageOpened () {
             return Boolean.parseBoolean(onesie.getText());
-        }
     }
+}
