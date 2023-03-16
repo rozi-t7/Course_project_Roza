@@ -3,11 +3,6 @@
 <suite thread-count="3" verbose="1" name="Course_project_Roza"
        annotations="JDK" parallel="tests">
 
-    <test name="Successful login test">
-        <classes>
-            <class name="sauceDemoTests.LoginTests"/>
-        </classes>
-    </test>
     <test name="Add items to cart">
         <classes>
             <class name="sauceDemoTests.AddItemsToTheCartTest"/>
@@ -16,6 +11,11 @@
     <test name="Checkout order">
         <classes>
             <class name="sauceDemoTests.CheckoutOrderTest"/>
+        </classes>
+    </test>
+    <test name="Finish order">
+        <classes>
+            <class name="sauceDemoTests.FinishOrderTest"/>
         </classes>
     </test>
     </suite>

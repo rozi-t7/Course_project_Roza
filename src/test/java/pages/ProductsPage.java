@@ -20,7 +20,6 @@ public class ProductsPage {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-
     public void addItemToCart(String productName) {
         String ItemToBeAddedByXpath = String.format(ADD_TO_CART_LOCATOR, productName);
         WebElement addToCartButton = driver.findElement(By.xpath(ItemToBeAddedByXpath));

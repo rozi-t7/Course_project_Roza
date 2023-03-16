@@ -21,8 +21,7 @@ public class TestUtil {
     public void setUp() {
         setupBrowserDriver();
     }
-
-    @AfterMethod
+   @AfterMethod
     public void quitBrowser() {
         driver.quit();
     }

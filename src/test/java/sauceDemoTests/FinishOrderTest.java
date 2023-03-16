@@ -5,7 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.*;
 
-public class CheckoutOrderTest extends TestUtil {
+public class FinishOrderTest extends TestUtil {
     @Test
     public void checkoutInfo() {
         LoginPage loginPage = new LoginPage(driver);
@@ -20,10 +20,15 @@ public class CheckoutOrderTest extends TestUtil {
 
         CheckoutInformationPage checkoutInformationPage = new CheckoutInformationPage(driver);
         checkoutInformationPage.addInfo("Nina", "Zamina", String.valueOf(1000));
+
         CheckoutOverviewPage checkoutOverviewPage = new CheckoutOverviewPage(driver);
-
-        Assert.assertTrue(checkoutOverviewPage.isFinishButtonShown());
-
         checkoutOverviewPage.finishOrder();
+
+        FinishOrderPage finishOrderPage = new FinishOrderPage(driver);
+
+        Assert.assertTrue(finishOrderPage.isHomeButtonShown());
+        finishOrderPage.backToProducts();
+
+
     }
 }
