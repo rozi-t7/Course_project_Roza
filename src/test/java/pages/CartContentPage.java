@@ -26,9 +26,11 @@ public class CartContentPage {
         return new CheckoutInformationPage(driver);
     }
     public boolean isItemBackpackShown(){
+
         return item2.isDisplayed();
     }
     public boolean isItemOnesieShown(){
+
         return item4.isDisplayed();
     }
 }

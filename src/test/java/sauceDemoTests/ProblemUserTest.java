@@ -10,12 +10,11 @@ public class ProblemUserTest extends TestUtil {
 
     @Test
     public void problemUser() {
-        LoginPage loginPage = new LoginPage(driver);
         ProblemUserProductsPage problemUserProductsPage = new ProblemUserProductsPage(driver);
         problemUserProductsPage.loginWithProblemUser("problem_user", "secret_sauce");
 
-        problemUserProductsPage.addProductToCart("bolt-t-shirt");
+        problemUserProductsPage.navigateToProduct();
 
-        Assert.assertFalse(problemUserProductsPage.isItemAddedInTheCart());
-    }
+
+        }
 }

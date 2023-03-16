@@ -28,7 +28,5 @@ public class FinishOrderTest extends TestUtil {
 
         Assert.assertTrue(finishOrderPage.isHomeButtonShown());
         finishOrderPage.backToProducts();
-
-
     }
 }
