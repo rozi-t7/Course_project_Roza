@@ -5,7 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.ProblemUserProductsPage;
 
-public class ProblemUserTests extends TestUtil {
+public class ProblemUserTest extends TestUtil {
 
     @Test
     public void problemUser() {
